@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="IndexApp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/angular-sanitize.js"></script>
+    <script src="scripts/angular-animate.js"></script>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+
+    <script src="index.js"></script>
+    <title>Curriculum Vitae</title>
+</head>
+
+<body ng-controller="IndexController">
+
+    <nav>
+        <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#experiences">Expériences</a></li>
+            <li><a href="#diplomes">Diplômes</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h2>Anaïs TORRES</h2>
+        <h1>Développeuse full-stack / développeuse front-end</h1>
+        <i>Développeuse full-stack de formation, je souhaite plus particulièrement travailler dans le développement
+            front-end et l'international m'attire énormément.</i>
+    </header>
+
+
+    <!--PRESENTATION-->
+
+    <!--
+        
+    Photo
+        Texte
+        Linkedin blabla-->
+
+    <!-- EXPERIENCES -->
+    <section id="experiences">
+        <h1>EXPERIENCES PROFESSIONNELLES</h1>
+        <div class="experiences">
+            <fieldset class="carteExp">
+                <h1>Développeuse full-stack </h1>
+                <h3>Creo Ignem</h3>
+                <div ng-show="detailsCreo == false">
+                    <img src="ressources/creo.png">
+                    <span> 2021-2022, Anzin</span>
+                </div>
+                <p ng-show="detailsCreo == true">
+                    Stage de cinq mois + une année d'apprentissage principalement dans le développement front-end
+                </p>
+                <span class="detailsBouton" ng-click="detailsCreo = false" ng-show="detailsCreo == true">▹ Retour
+                    ◃</span>
+                <span class="detailsBouton" ng-click="detailsCreo = true" ng-hide="detailsCreo == true">▹ Détails
+                    ◃</span>
+            </fieldset>
+
+            <fieldset class="carteExp">
+                <h1>Téléconseillère / Télévendeuse </h1>
+                <h3>Comdata Group</h3>
+                <div ng-show="detailsComdata == false">
+                    <img src="ressources/comdata.png">
+                    <span>Octobre 2016 - Octobre 2018, Valenciennes</span>
+                </div>
+                <p ng-show="detailsComdata == true"> SFR entrant, La Poste service réclamation, Aviva, Engie Home
+                    Services, SFAM</p>
+                <span class="detailsBouton" ng-click="detailsComdata = false" ng-show="detailsComdata == true">▹ Retour
+                    ◃</span>
+                <span class="detailsBouton" ng-click="detailsComdata = true" ng-hide="detailsComdata == true">▹ Détails
+                    ◃</span>
+            </fieldset>
+            <fieldset class="carteExp">
+                <h1>Technicienne Supérieure de laboratoire </h1>
+                <h3>Centre National de Recherche Scientifique</h3>
+                <div ng-show="detailsCNRS == false">
+                    <img src="ressources/cnrs.png">
+                    <span>2014, Lille</span>
+                </div>
+                <p ng-show="detailsCNRS == true">Unité de Glycobiologie Structurale et Fonctionnelle</p>
+                <span class="detailsBouton" ng-click="detailsCNRS = false" ng-show="detailsCNRS == true">▹ Retour
+                    ◃</span>
+                <span class="detailsBouton" ng-click="detailsCNRS = true" ng-hide="detailsCNRS == true">▹ Détails
+                    ◃</span>
+            </fieldset>
+        </div>
+    </section>
+
+    <!-- FORMATIONS -->
+    <section id="diplomes">
+        <h1>Diplômes</h1>
+        <ul>
+            <li>
+                <span class="titre">Titre professionnel Concepteur et Développeur d'Applications</span>
+                <span class="date"> 2022, Valarep - Valenciennes</span>
+                <!--FLECHE Introduction Java, Symfony, AngularIO etc -->
+            </li>
+            <li>
+                <span class="titre">Titre professionnel Développement Web et Web Mobile</span>
+                <!--Base de la programmation, HTML/CSS, JS, php, bases de données relationnelles et non relationnelles -->
+                <span class="date"> 2021, Valarep - Valenciennes</span>
+            </li>
+            <li>
+                <span class="titre">Brevet de Technicien Supérieur Bioanalyses et Contrôles </span>
+                <span class="date"> 2014, Lycée de l'Escaut - Valenciennes </span>
+            </li>
+            <li>
+                <span class="titre">Baccaulauréat Général Scientifique </span>
+                <span class="date"> 2012, Lycée de l'Escaut - Valenciennes </span>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h1>Compétences</h1>
+
+        <div class="skills">
+            <ul class="developpement">
+                <h2>Développement Web</h2>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>AngularJS</li>
+                <li>TypeScript</li>
+                <li>JQuery</li>
+                <li>SQL</li>
+                <li>Attestation RGPD</li>
+            </ul>
+
+            <ul class="autresSkills">
+                <h2>Autres compétences</h2>
+                <li>Brevet de Secourisme PSC1</li>
+                <li>Formation Techniques de vente par téléphone</li>
+                <li>Comptabilité</li>
+                <li>Ecriture</li>
+                <li>Retouche / montage photo</li>
+                <li>Certification en Naturopathie</li>
+                <li>Cours de droit</li>
+            </ul>
+
+            <ul>
+                <h2>Langues</h2>
+                <li>Français : langue maternelle</li>
+                <li>Anglais : niveau intermédiaire</li>
+                <li>Espagnol : compris</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projets">
+        <h1>Projets</h1>
+        <ul>
+            <li><a href="http://niwawa.sianadoe.fr/">Niwawa</a></li>
+            <li><a href="http://clickclick.sianadoe.fr/">Click</a></li>
+            <li><a href="http://memory.danays.sianadoe.fr/">Memory</a></li>
+            <li>Ahra</li>
+            <li>Participation à la création d'une communauté de développeurs sur discord</li>
+        </ul>
+    </section>
+
+</body>
+
+</html>
