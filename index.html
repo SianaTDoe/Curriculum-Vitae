@@ -35,13 +35,26 @@
     </header>
 
 
+    <!--thème sombre variables css -->
     <!--PRESENTATION-->
 
-    <!--
-        
-    Photo
-        Texte
-        Linkedin blabla-->
+<section id="presentation">
+    <h1>PRESENTATION</h1>
+    <div class="presentation">
+    <div>
+    <img src="ressources/20191122_205452.jpg">
+</div>
+    <div class="resume">
+      <a href="https://www.linkedin.com/in/ana%C3%AFs-torres-286271239/"><img src="ressources/linkedin.png"></a>  
+      <a>✉ anaistorres.dev@gmail.com</a>
+       <span>Développeuse full-stack de 28 ans, je suis dans le domaine depuis peu après une reconversion professionnelle. 
+        Technicienne en biologie de base, j'ai découvert le développement web en 2017 et ai décidé de m'y former afin d'en faire mon métier.
+J'ai pu découvrir de nombreuses technologies durant ma deuxième année de formation en apprentissage au sein d'une entreprise de e-commerce et j'y ai approfondi ma passion pour le développement web, en particulier le front-end.
+       </span>
+    </div> 
+</div>
+    </section>
+
 
     <!-- EXPERIENCES -->
     <section id="experiences">
@@ -55,7 +68,13 @@
                     <span> 2021-2022, Anzin</span>
                 </div>
                 <p ng-show="detailsCreo == true">
-                    Stage de cinq mois + une année d'apprentissage principalement dans le développement front-end
+                    Stage de <b>cinq mois + une année d'apprentissage</b>
+                    <br>     <br>
+                    Développement <b>full-stack</b>, majoritairement <b>front-end</b>
+                    <br>     <br>
+                 <b>E-commerce</b>
+                 <br>     <br>
+                    Elaboration d'une borne de commande pour King Jouet, avec AngularJS / TypeScript, C# en back et une base de données relationnelle
                 </p>
                 <span class="detailsBouton" ng-click="detailsCreo = false" ng-show="detailsCreo == true">▹ Retour
                     ◃</span>
@@ -71,8 +90,16 @@
                     <img src="ressources/comdata.png">
                     <span>Octobre 2016 - Octobre 2018, Valenciennes</span>
                 </div>
-                <p ng-show="detailsComdata == true"> SFR entrant, La Poste service réclamation, Aviva, Engie Home
-                    Services, SFAM</p>
+                <p ng-show="detailsComdata == true"> 
+                    <b>SFR entrant :</b> service client avec vente d'abonnements fibre optique
+                    <br><br>
+                    <b>La Poste :</b> service réclamation
+                    <br><br>
+                    <b>Aviva :</b> vente d'assurances obsèques
+                     <br><br>
+                     <b>Engie Home Services :</b> conseil et vente de contrats d'entretien
+                    <br><br>
+                    <b>SFAM :</b> vente d'assurances pour électroménager</p>
                 <span class="detailsBouton" ng-click="detailsComdata = false" ng-show="detailsComdata == true">▹ Retour
                     ◃</span>
                 <span class="detailsBouton" ng-click="detailsComdata = true" ng-hide="detailsComdata == true">▹ Détails
@@ -85,7 +112,13 @@
                     <img src="ressources/cnrs.png">
                     <span>2014, Lille</span>
                 </div>
-                <p ng-show="detailsCNRS == true">Unité de Glycobiologie Structurale et Fonctionnelle</p>
+                <p ng-show="detailsCNRS == true">
+                    Unité de <b>Glycobiologie Structurale et Fonctionnelle</b>
+                    <br><br>
+                    Etude de la production d'amidon chez la microalgue <i>Chlamydomonas reinhardtii</i> grâce à la création de mutants et l'étude de leur ADN
+                    <br><br>
+
+                </p>
                 <span class="detailsBouton" ng-click="detailsCNRS = false" ng-show="detailsCNRS == true">▹ Retour
                     ◃</span>
                 <span class="detailsBouton" ng-click="detailsCNRS = true" ng-hide="detailsCNRS == true">▹ Détails
@@ -134,6 +167,7 @@
                 <li>TypeScript</li>
                 <li>JQuery</li>
                 <li>SQL</li>
+                <li>C#</li>
                 <li>Attestation RGPD</li>
             </ul>
 

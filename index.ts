@@ -24,7 +24,6 @@ module Index {
         private init() {
             var self = this.scope;
             var method = this; 
-            console.log("test");
             self.detailsCreo = false;
             self.detailsComdata = false;
             self.detailsCNRS = false;
