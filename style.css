@@ -70,17 +70,41 @@ header h1 {
     flex-direction: column;
     align-items: center;
     width: 50%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.presentation .resume .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.presentation .resume a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22%;
+    height: 4rem;
+    justify-content: center;
+    margin: 0 1rem;
+    background-color: #8974df94;
+    border-radius: 14px;
 }
 
 .presentation .resume a img {
     width: 50px;
 }
 
-.presentation span {
+.resume>span {
     font-size: 1.2rem;
     text-align: justify;
 }
 
+.contact .icone {
+    font-size: 1.7rem;
+}
 
 /* NAVBAR */
 
