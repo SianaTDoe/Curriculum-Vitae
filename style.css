@@ -322,3 +322,32 @@ width: 1rem
     width: 70%;
 }
 
+
+@media (max-width: 720px) {
+
+    nav ul {
+        height: 10rem;
+        justify-content: center;
+    }
+
+ nav li {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    letter-spacing: -3px;
+    font-size: 0.8rem;
+    margin: 0 1.3rem;
+ }
+
+ section {
+    
+    height: 100%;
+ }
+
+ header {
+    padding: 12rem 0 0 0;
+ }
+
+ .skills {
+    display: block;
+ }
+}
