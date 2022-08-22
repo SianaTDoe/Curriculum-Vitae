@@ -1,3 +1,8 @@
+body, html{
+    margin:0;
+    padding:0;
+}
+
 body {
     margin: 0;
     height: 100%;
@@ -34,12 +39,17 @@ section>h1, #contact h1 {
 }
 
 header {
+    display: block;
     background-image: url(ressources/bgUn.avif);
     background-repeat: no-repeat;
     height: 900px;
     color: white;
-    padding: 18rem 0 0 20rem;
+    padding: 18rem 11rem 0 20rem;
     font-size: 1.5rem;
+}
+
+.headerMobile {
+    display: none;
 }
 
 header h2 {
@@ -50,6 +60,7 @@ header h2 {
 header h1 {
     margin: 0
 }
+
 
 /* PRESENTATION */ 
 
@@ -97,7 +108,8 @@ nav ul {
 }
 
 nav li {
-    margin: 0 3rem;
+    width: 8rem;
+    text-align: center;
 }
 
 nav a {
@@ -301,7 +313,7 @@ width: 1rem
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border-radius: 14px;
     padding: 1rem;
     background-color: #8974df94;
 }
@@ -323,9 +335,13 @@ width: 1rem
 }
 
 
-@media (max-width: 720px) {
+@media (max-width: 750px) {
 
-    nav ul {
+    nav {
+        display: none;
+    }
+
+   /* nav ul {
         height: 10rem;
         justify-content: center;
     }
@@ -336,18 +352,80 @@ width: 1rem
     letter-spacing: -3px;
     font-size: 0.8rem;
     margin: 0 1.3rem;
- }
+ }*/
 
  section {
     
     height: 100%;
  }
 
- header {
-    padding: 12rem 0 0 0;
- }
+ header {    
+    display: none;
+}
+
+.headerMobile {
+    display: flex;
+    background-color: #b5dedf8a;
+    flex-direction: column;
+    color: white;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.presentation {
+    flex-direction: column;
+}
+
+.presentation .portrait {
+    width: 200px;
+}
+.presentation .resume {
+    width: 90%;
+}
+
+.carteExp {
+    width: 80%;
+}
+
+#diplomes ul {
+    margin: 0;
+}
+
+#diplomes li {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+}
+
+#projets ul {    
+    justify-content: center;
+}
+
+#projets ul li {
+    width: 70%;
+}
+
+.carteExp p {
+    font-size: 0.8rem;
+}
 
  .skills {
-    display: block;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ .skills ul {
+    width: 16rem;
+ }
+
+ .liens {
+    width: 100%;
+ }
+
+ .mail {
+    display: none;
  }
 }
